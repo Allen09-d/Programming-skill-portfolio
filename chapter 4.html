@@ -1,0 +1,132 @@
+<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digi Fest 2022</title> <!-- Sets the title of the document that appears in the browser tab -->
+    <style>         /* CSS styles for the body */
+            body {
+                font-family: Arial, sans-serif; /* Sets the font family for the body */
+                font-weight: 500; /* Sets the font weight */
+                margin: 0; /* Removes default margin */
+                padding: 0; /* Removes default padding */
+                color: b; /* Sets the text color (this should be a valid color value) */
+            }
+                    /* CSS styles for the header */
+            header {
+                background-color: #17072b; /* Sets the background color of the header */
+                color: white; /* Sets the text color in the header */
+                text-align: center; /* Centers the text in the header */
+                padding: 20px; /* Adds padding around the header */
+                font-family: Tahoma, sans-serif; /* Sets the font family for the header */
+                font-weight: bolder; /* Sets the font weight */
+                text-decoration: underline; /* Underlines the text in the header */
+            }
+            /* CSS styles for the navigation menu */
+            nav ul {
+                list-style: none; /* Removes bullet points from the list */
+                padding: 0; /* Removes padding from the list */
+            }
+            /* CSS styles for list items in the navigation */
+            nav ul li {
+                display: inline; /* Displays list items in a horizontal line */
+                margin: 0 15px; /* Adds margin between list items */
+            }
+            /* CSS styles for links in the navigation */
+            nav ul li a {
+                color: white; /* Sets the text color of links */
+                text-decoration: none; /* Removes underline from links */
+                font-weight: 700; /* Sets the font weight for links */
+            }
+            /* CSS styles for the main content area */
+            main {
+                display: flex; /* Uses flexbox for layout */
+                justify-content: space-between; /* Distributes space between child elements */
+                padding: 20px; /* Adds padding around the main content */
+            }
+            /* CSS styles for the welcome section */
+            .welcome {
+                width: 90%; /* Sets the width of the welcome section */
+            }
+            /* CSS styles for the heading in the welcome section */
+            .welcome h2 {
+                font-weight:bolder; /* Sets the font weight for the heading */
+                text-decoration: underline; /* Underlines the heading */
+            }
+            /* CSS styles for images in the welcome section */
+            .welcome img {
+                width: 500%; /* Sets the width of the image (this is likely too large) */
+                margin-top: 20px; /* Adds margin above the image */
+            }
+            /* CSS styles for the line-up section */
+            .line-up {
+                width: 50%; /* Sets the width of the line-up section */
+                background-color: #172d67; /* Sets the background color of the line-up section */
+                color: white; /* Sets the text color in the line-up section */
+                padding: 15px; /* Adds padding around the line-up section */
+                border-radius: 5px; /* Rounds the corners of the line-up section */
+            }
+            /* CSS styles for the heading in the line-up section */
+            .line-up h2 {
+                font-weight: 700; /* Sets the font weight for the heading */
+                text-decoration: underline; /* Underlines the heading */
+            }
+            /* CSS styles for the images container in the line-up section */
+            .images {
+                display: flex; /* Uses flexbox for layout */
+                justify-content: space-between; /* Distributes space between images */
+                margin-top: 10px; /* Adds margin above the images container */
+            }
+            /* CSS styles for images in the images container */
+            .images img {
+                width: 48%; /* Sets the width of the images */
+                height: auto; /* Maintains the aspect ratio of the images */
+            }
+            /* CSS styles for the footer */
+            footer {
+                background-color: darkorchid; /* Sets the background color of the footer */
+                color: white; /* Sets the text color in the footer */
+                text-align: center; /* Centers the text in the footer */
+                padding: 10px; /* Adds padding around the footer */
+                margin-top: 20px; /* Adds margin above the footer*/
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DIGI FEST 2022</h1> <!-- Main title -->
+        <nav>
+            <ul> <!-- Navigation link -->
+                <li><a href="#">Home</a></li> 
+                <li><a href="#">About</a></li>
+                <li><a href="#">What's On</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="Welcome"> <!-- Welcome section -->
+            <h2>Welcome</h2> <!-- Welcome heading -->
+            <p>Digi Fest is a celebration of digital and technology in the city of Cardiff. This year, we are celebrating ‘collaboration’, so come and find out about the latest collaborations that are happening in this historic and innovative city. They promise an educational and inspirational packed programme for all.</p> <!-- Welcome text -->
+            <img src="https://teachyourkidscode.com/wp-content/uploads/2022/02/best-coding-language-for-games.jpg"> <!-- Welcome image -->
+        </section>
+        <aside class="line-up"> <!-- Line-up section -->
+            <h2>Line Up</h2> <!-- Line-up heading -->
+            <ul>
+                <li>Introduction to HTML and CSS</li> <!-- Line-up item -->
+                <li>Links and images</li>
+                <li>Page Layout</li>
+            </ul>
+            <div class="images"> <!-- Container for images -->
+                <img src="https://www.sonicmfg.com/wp-content/themes/yootheme/cache/5f/pcb-1-1242164-5f6ad7a9.jpeg" alt="Circuit board"> <!-- Image 1 -->
+                <img src="https://media.istockphoto.com/id/594907500/photo/closeup-electronic-circuit-board.jpg?s=612x612&w=0&k=20&c=XlchPvcO2MFKZjOup_Q6AjCpa1gNCXuQtlRhpXm1Erc=" alt="Digital circuit"> <!-- Image 2 -->
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2022 DigiFest Ltd.</p> <!-- Footer text -->
+    </footer>
+</body>
+</html>

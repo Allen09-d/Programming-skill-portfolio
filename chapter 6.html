@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Calculator</title> <!-- Title of the webpage -->
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            background: #2c3e50;
+            color: #ecf0f1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header section styling */
+        .header {
+            background: #34495e;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #ecf0f1;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Main container to hold input and result sections */
+        .main-container {
+            display: flex;
+            flex: 1;
+            padding: 32px;
+            gap: 32px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Input section styling */
+        .input-section {
+            flex: 1;
+            background: #34495e;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Result display section */
+        .result-section {
+            flex: 1;
+            background: #34495e;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Styling for input groups */
+        .input-group {
+            margin-bottom: 32px;
+        }
+
+        /* Label styling for inputs */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #bdc3c7;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        /* Styling for input fields */
+        input {
+            width: 92%;
+            padding: 16px;
+            background: #2c3e50;
+            border: 2px solid #3498db;
+            border-radius: 4px;
+            font-size: 18px;
+            color: #ecf0f1;
+            transition: all 0.3s ease;
+        }
+
+        /* Focus effect for inputs */
+        input:focus {
+            outline: none;
+            border-color: #2980b9;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+        }
+
+        /* Button styling */
+        button {
+            background: #3498db;
+            color: white;
+            padding: 16px 32px;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        /* Button click effect */
+        button:active {
+            transform: translateY(0);
+        }
+
+        /* Styling for the result display */
+        #result {
+            text-align: center;
+            font-size: 40px;
+            color: #3498db;
+            font-weight: 700;
+            margin: 0;
+            padding: 32px;
+            background: #2c3e50;
+            border-radius: 4px;
+            border: 2px solid #3498db;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                padding: 16px;
+            }
+
+            .input-section, .result-section {
+                width: 100%;
+            }
+
+            #result {
+                font-size: 32px;
+            }
+        }
+
+        /* Hide the number input arrows */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Styling for section titles */
+        .section-title {
+            color: #3498db;
+            font-size: 24px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+        }
+    </style>
+
+    <!-- Importing the Roboto font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header class="header">
+        <h1>Allen's Petrol Calculator</h1>
+    </header>
+
+    <!-- Main container to hold input fields and result display -->
+    <div class="main-container">
+        
+        <!-- Section for user input -->
+        <section class="input-section">
+            <h2 class="section-title">Input Details</h2>
+            
+            <!-- Input field for petrol cost per liter -->
+            <div class="input-group">
+                <label for="petrolCost">Cost per Liter ($)</label>
+                <input type="number" id="petrolCost" value="1.72" step="0.01" min="0" placeholder="Enter cost per liter">
+            </div>
+
+            <!-- Input field for number of liters -->
+            <div class="input-group">
+                <label for="liters">Number of Liters</label>
+                <input type="number" id="liters" value="0" min="0" placeholder="Enter number of liters">
+            </div>
+
+            <!-- Button to trigger the calculation -->
+            <button onclick="calculateTotal()">Calculate Total</button>
+        </section>
+
+        <!-- Section to display the result -->
+        <section class="result-section">
+            <h2 class="section-title">Total Cost</h2>
+            <p id="result">$0.00</p>
+        </section>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

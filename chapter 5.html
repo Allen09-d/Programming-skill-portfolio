@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video loop</title> <!-- Title of the webpage -->
+    <style>
+        body {
+            display: flex; /* Uses flexbox for layout */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+            margin: 0; /* Removes default margin */
+            background-color: rgb(0, 0, 0); /* Sets the background color to black */
+        }
+        video {
+            max-width: 100%; /* Ensures the video does not exceed the width of its container */
+            height: auto; /* Maintains the aspect ratio of the video */
+        }
+    </style>
+</head>
+<body>
+    <video controls loop poster="chapter 5/laughmeme.mp4"> <!-- Video element with controls and looping enabled -->
+        <source src="chapter 5/laughmeme.mp4" type="video/mp4"> <!-- Source of the video file -->
+    </video>
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* Basic reset for body and list elements */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bfc0bb;
+}
+
+/* Header styles */
+header {
+    background-color: #120049;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation menu styles */
+nav {
+    background-color: #a80800;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+}
+
+/* Two-column layout for sections */
+.two-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    background-color: white;
+    padding: 15px;
+    margin: 5px;
+    flex: 1; /* Allow columns to grow equally */
+}
+
+/* Button styles */
+.track-button {
+    background-color: #000b4b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

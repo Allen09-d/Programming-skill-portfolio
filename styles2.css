@@ -1,0 +1,17 @@
+/* Basic reset for body and list elements */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+nav {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style-type: style;
+}
